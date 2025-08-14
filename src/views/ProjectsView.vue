@@ -12,7 +12,7 @@
         <Card v-for="(project, index) in projects" :key="project.id" :project="project" :index="index" @toggle-details="toggleProjectDetails(project.id)" />
       </div>
       <div class="text-center mt-12">
-        <button class="bg-gradient-to-r from-sky-500 via-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 hover:scale-105">
+        <button class="bg-gradient-to-r from-sky-500 via-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold">
           View All Projects
         </button>
       </div>

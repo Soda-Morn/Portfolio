@@ -8,9 +8,9 @@
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="order-2 md:order-1" ref="aboutImage">
           <div class="relative group">
-            <div class="w-80 h-80 mx-auto rounded-2xl overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
+            <div class="w-80 h-80 mx-auto rounded-2xl overflow-hidden shadow-2xl transform group-hover:scale-105">
               <img src="../assets/image/about-pic.jpg" alt="Soda Morn - About Me" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-              <div class="absolute inset-0 bg-gradient-to-t from-sky-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-sky-600/20 to-transparent opacity-0 group-hover:opacity-100"></div>
             </div>
             <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-sky-400 to-blue-500 rounded-full flex items-center justify-center shadow-xl animate-bounce-gentle">
               <Code class="h-12 w-12 text-white animate-pulse" />
@@ -37,11 +37,11 @@
             </div>
           </div>
           <div class="flex flex-wrap gap-2 mb-6">
-            <span v-for="(skill, index) in softSkillsPreview" :key="skill" class="bg-gradient-to-r from-sky-100 to-blue-100 text-sky-800 px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-300 animate-fadeInUp" :style="{ animationDelay: (index * 0.1 + 0.9) + 's' }">
+            <span v-for="(skill, index) in softSkillsPreview" :key="skill" class="bg-gradient-to-r from-sky-100 to-blue-100 text-sky-800 px-3 py-1 rounded-full text-sm hover:scale-105 animate-fadeInUp" :style="{ animationDelay: (index * 0.1 + 0.9) + 's' }">
               {{ skill }}
             </span>
           </div>
-          <a href="#contact" class="inline-flex items-center bg-gradient-to-r from-sky-500 via-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 hover:scale-105 animate-fadeInUp animation-delay-1200">
+          <a href="#contact" class="inline-flex items-center bg-gradient-to-r from-sky-500 via-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-2xl transform hover:-translate-y-2 animate-fadeInUp animation-delay-1200">
             Let's Work Together
             <ArrowRight class="h-5 w-5 ml-2 animate-bounce-x" />
           </a>

@@ -2,9 +2,9 @@
   <form @submit.prevent="$emit('submit', form)" class="space-y-6">
     <div v-for="(field, index) in formFields" :key="field.name" class="animate-fadeInUp" :style="{ animationDelay: index * 0.1 + 's' }">
       <label class="block text-sm font-medium text-gray-700 mb-2">{{ field.label }}</label>
-      <component :is="field.component" v-model="form[field.name]" :type="field.type" :rows="field.rows" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all duration-300 hover:shadow-md focus:shadow-lg" required />
+      <component :is="field.component" v-model="form[field.name]" :type="field.type" :rows="field.rows" class="sm:w-full md:w-full w-[360px]  px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all duration-300 hover:shadow-md focus:shadow-lg" required />
     </div>
-    <button type="submit" class="w-full bg-gradient-to-r from-sky-500 via-blue-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 hover:scale-105 animate-pulse-slow">
+    <button type="submit" class="sm:w-full md:w-full w-[360px] bg-gradient-to-r from-sky-500 via-blue-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 hover:scale-105 animate-pulse-slow">
       Send Message
     </button>
   </form>

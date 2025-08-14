@@ -4,7 +4,7 @@
       <div class="flex justify-between items-center py-4">
         <div class="text-2xl font-bold bg-gradient-to-r from-sky-600 via-blue-600 to-purple-600 bg-clip-text text-transparent animate-pulse">
           Soda Morn
-        </div>
+        </div>  
         <!-- Desktop Nav -->
         <div class="hidden md:flex space-x-8">
           <router-link
